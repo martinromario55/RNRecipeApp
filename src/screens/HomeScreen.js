@@ -60,10 +60,10 @@ export default function HomeScreen() {
       <ScrollView
         showsVerticalScrollIndicator={false}
         contentContainerStyle={{ paddingBottom: 50 }}
-        className="space-y-6 pt-14"
+        className="space-y-6 pt-10"
       >
         {/* Avatar and bell icon */}
-        <View className="mx-4 flex-row justify-between items-center mb-2">
+        <View className="mx-4 flex-row justify-between items-center mb-1">
           <Image
             source={require('../../assets/images/avatar.png')}
             style={{ width: hp(5.5), height: hp(5) }}
