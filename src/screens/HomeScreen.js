@@ -32,7 +32,7 @@ export default function HomeScreen() {
   const getCategories = async () => {
     try {
       const response = await axios.get(
-        'https://www.themealdb.com/api/json/v1/1/categories.php'
+        'https://themealdb.com/api/json/v1/1/categories.php'
       )
       // console.log('got categories', response.data)
       setCategories(response.data.categories)
@@ -45,7 +45,7 @@ export default function HomeScreen() {
   const getRecipes = async (category = 'Beef') => {
     try {
       const response = await axios.get(
-        `https://www.themealdb.com/api/json/v1/1/filter.php?c=${category}`
+        `https://themealdb.com/api/json/v1/1/filter.php?c=${category}`
       )
       // console.log('got recipes', response.data)
       setMeals(response.data.meals)
